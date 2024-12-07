@@ -26,7 +26,7 @@ import {
   Fingerprint,
   Bell,
   Menu,
-  X,
+//   X,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { ChevronDown } from "lucide-react";
@@ -34,17 +34,17 @@ import { ChevronDown } from "lucide-react";
 const features = [
   {
     icon: Code,
-    title: "Open source",
+    title: "Staff Management",
     description: "This Pokemon's cry is very loud and distracting",
   },
   {
     icon: DollarSign,
-    title: "Free for everyone",
+    title: "Financial Management",
     description: "The fluid of Smeargle's tail secretions changes",
   },
   {
     icon: Book,
-    title: "Documentation",
+    title: "Student Management",
     description: "Yanma is capable of seeing 360 degrees without",
   },
   {
@@ -54,12 +54,12 @@ const features = [
   },
   {
     icon: PieChart,
-    title: "Analytics",
+    title: "Reports",
     description: "This Pokémon uses its flying ability to quickly chase",
   },
   {
     icon: Bell,
-    title: "Notifications",
+    title: "Notice Board",
     description: "Combusken battles with the intensely hot flames it spews",
   },
 ];
