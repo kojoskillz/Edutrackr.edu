@@ -51,7 +51,7 @@ export default function BackgroundBoxesDemo() {
             />            
             <div className="grid">
                 <h1 className="text-white text-left text-wrap text-sm font-semibold">
-                    "The best software for <br /> managing schools data!" 
+                    &quot;The best software for <br /> managing schools data!&quot; 
                 </h1>
                 <p className="text-white/60 text-xs text-center">
                     Mr. Koku Darlington, Principal <br /> @ Marriot International School
