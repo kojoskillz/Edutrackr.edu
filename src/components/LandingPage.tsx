@@ -4,6 +4,7 @@ import { Boxes } from "../components/ui/background-boxes";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 import thumpup from "../app/assets/thumpup.png";
+import boss from "../app/assets/img0.jpg";
 
 
 export default function BackgroundBoxesDemo() {
@@ -39,6 +40,25 @@ export default function BackgroundBoxesDemo() {
                     <span className="text-white ">Get Started</span>
                  </button>
 
+        <div className="flex z-50 mt-5">
+            <Image
+            src={boss}
+                  alt="star_image"
+                  width="100"
+                  height="100"
+                  sizes="fit-content"
+                  className="boss rounded-full h-12 w-12 fit-content m-3"    
+            />            
+            <div className="grid">
+                <h1 className="text-white text-left text-wrap text-sm font-semibold">
+                    "The best software for <br /> managing schools data!" 
+                </h1>
+                <p className="text-white/60 text-xs text-center">
+                    Mr. Koku Darlington, Principal <br /> @ Marriot International School
+                </p>
+            </div>
+            
+        </div>
       
     
         
