@@ -9,7 +9,7 @@ import boss from "../app/assets/img0.jpg";
 
 export default function BackgroundBoxesDemo() {
   return (
-    <div className="h-[50rem] md:h-[40rem]  relative w-full  overflow-hidden bg-slate-900 flex flex-col items-center justify-center ">
+    <div className="h-[45rem] md:h-[40rem]  relative w-full  overflow-hidden bg-slate-900 flex flex-col items-center justify-center ">
       <div className="absolute inset-0 w-full h-full bg-black z-20 [mask-image:radial-gradient(transparent,white)] pointer-events-none" />
 
       <div className="relative md:-mt-0 -mt-32 flex rounded-full p-[4px] mx-auto border z-40 border-white/10  bg-gradient-to-r  from-transparent via-slate-900 to-black w-[13rem] lg:w-[13.5rem] place-content-center ">
