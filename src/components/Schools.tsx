@@ -13,8 +13,8 @@ import logo8 from "../app/assets/logo8.jpg"
 const Schools = () => {
   return (
     <div >
-          <div className="z-40 bg-[#000409] pb-[20rem] ">
-            <h1 className="text-white text-center text-sm mt-10">
+          <div className="z-40 bg-[#000409] ">
+            <h1 className="text-gray-500 text-center text-sm mt-10">
                 Trusted by 150+ educational institutions
             </h1>
 
