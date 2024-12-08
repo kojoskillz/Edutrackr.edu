@@ -168,7 +168,7 @@ body{
   margin-right: 20px;
 }
 
-/* .marquee .logo-container .logo:nth-child(1) {
+.marquee .logo-container .logo:nth-child(1) {
   animation-delay: 0s;
 }
 
@@ -178,7 +178,7 @@ body{
 
 .marquee .logo-container .logo:nth-child(3) {
   animation-delay: 4s;
-} */
+} 
 
 /* Add more logo delays as needed */
 
@@ -201,20 +201,20 @@ body{
 .logo::after {
   content: "";
   position: absolute;
-  width: 90px;
+  width: 200px;
   height: 130px;
-  background: linear-gradient(to right, #000409e7 -120%,#000409 200% );
+  background: linear-gradient(to right, #000409,#000409);
   z-index: 2;
 }
 
 .logo::before {
-  left: 0;
-  background: linear-gradient(to right, #000409e7 -120%,#000409 200% );
+  right: 0;
+  background: linear-gradient(to left, #000409 10%,#00040900 );
   z-index: 2;
 }
 
 .logo::after {
-  right: 0;
-  background: linear-gradient(to left, #000409d3 -120%,#000409 200% );
+  left: 0;
+  background: linear-gradient(to right, #000409 10%,#00040900);
   z-index: 2;
 }
