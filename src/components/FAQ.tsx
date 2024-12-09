@@ -15,7 +15,7 @@ import {
               </h1>
           </div>
       
-      <Accordion type="single" collapsible className="mt-10  w-[20rem] md:w-[45rem] lg:w-[45rem] m-auto place-content-center">
+      <Accordion type="single" collapsible className="mt-10  w-[23rem] md:w-[45rem] lg:w-[45rem] m-auto place-content-center">
       <AccordionItem value="item-1" className="text-white text-left border-[1px] border-white/5 px-4  glass2 rounded-[12px] ">
           <AccordionTrigger>What is a Student Management System?</AccordionTrigger>
           <AccordionContent>
