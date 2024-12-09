@@ -14,7 +14,7 @@ export default function TextRevealDemo() {
                         sizes="fit-content"
                         className="h-7 w-7 fit-content"    
                     />
-                   <h1 className="text-white  font-semibold text-center lawn_color ">
+                   <h1 className="text-white sticky font-semibold text-center lawn_color ">
                        About Edutrack
                     </h1>
             </div>
@@ -22,9 +22,9 @@ export default function TextRevealDemo() {
             <div className="z-10 text-center flex min-h-64 items-center justify-center rounded-lg  bg-[#000409] dark:bg-[#000409]">
                     <TextReveal text="EduTrack is a cutting-edge student management system designed to streamline educational institutions' administrative tasks. Our innovative platform provides a comprehensive solution for managing student data, tracking academic progress, and facilitating communication between educators, students, and parents." />
             </div>
-            <span className="text-white mt-[-7rem] md:text-5xl text-2xl font-bold place-content-center m-auto text-center lawn_color ">
-                       We are here to simplify your work
-           </span>
+            <h1 className="text-white top relative z-1 fixed  lg:mt-[-6rem] md:mt-[-6rem] mt-[-11rem] m-10  md:text-5xl text-2xl font-bold place-content-center m-auto text-center lawn_color ">
+                       We are here to simplify your work    
+           </h1>
 
     </div>
   );
