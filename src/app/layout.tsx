@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
-import { Agdasima} from 'next/font/google';
+// import { Agdasima} from 'next/font/google';
 import "./globals.css";
 
 const geistSans = localFont({
@@ -13,11 +13,11 @@ const geistMono = localFont({
   variable: "--font-geist-mono",
   weight: "100 900",
 });
-const agdasima = Agdasima({
-  subsets: ["latin"],
-  variable: "--font-agdasima",
-  weight: "400",
-});
+// const agdasima = Agdasima({
+//   subsets: ["latin"],
+//   variable: "--font-agdasima",
+//   weight: "400",
+// });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -32,7 +32,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${agdasima.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
       </body>
