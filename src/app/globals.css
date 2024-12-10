@@ -103,14 +103,14 @@ body{
   margin-right: 2px;
 }
 
-:root {
+/* :root {
   --font-agdasima: "Agdasima", cursive;
   /* --font-paytone_one:  "Paytone_One", system-ui; */
-}
 
-.agdasima {
+
+/* .agdasima {
   font-family: var(--font-agdasima);
-}
+} */
 
 .lawn_color{
   background:linear-gradient(to right,rgb(0, 191, 255),rgb(0, 64, 255));
