@@ -1,5 +1,6 @@
 "use client";
-
+import logoX from "../app/assets/Edutrack logo.png"
+import Image from "next/image";
 import * as React from "react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
@@ -74,10 +75,18 @@ export default function Navbar() {
         <div className="container flex h-14 items-center justify-between ">
           <div className="flex items-center w-full space-x-4">
             <Link href={"/"} className="flex items-center space-x-2">
-              <div className="bg-blue-500 rounded-full p-1">
+              {/* <div className="bg-blue-500 rounded-full p-1">
                 <span className="text-white font-bold text-xl">Σ</span>
-              </div>
-              <span className="font-bold text-xl text-white ">Edutrack</span>
+              </div> */}
+                <Image
+                        src={logoX}
+                            alt="star_image"
+                            width="100"
+                            height="100"
+                            sizes="fit-content"
+                            className=" rounded-full md:h-[2.2rem] h-[2rem] md:w-[2.2rem] w-[2rem] fit-content ml-3"    
+                        />  
+              <span className="font-bold text-xl text-white ">EduTrack</span>
             </Link>
 
             <NavigationMenu className="hidden md:flex">
@@ -175,8 +184,19 @@ export default function Navbar() {
               </Button>
             </SheetTrigger>
             <SheetContent side="left" className="w-full glass p-0">
-              <SheetHeader className="border-b p-4 text-white">
-                <SheetTitle className="text-left text-white font-bold">EduTrack</SheetTitle>
+              <SheetHeader className="border-b  p-4 text-white">
+                <div className="flex gap-2 ml-[-1.2rem] ">
+                  <Image
+                          src={logoX}
+                              alt="star_image"
+                              width="100"
+                              height="100"
+                              sizes="fit-content"
+                              className=" rounded-full md:h-[2.2rem] h-[2rem] md:w-[2.2rem] w-[2rem] fit-content ml-3"    
+                          />  
+                  <SheetTitle className="text-left text-white font-bold">EduTrack</SheetTitle>
+                </div>
+            
               </SheetHeader>
               <div className="flex flex-col py-4 text-white ">
                 <Link
