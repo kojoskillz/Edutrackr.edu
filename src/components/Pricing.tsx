@@ -73,9 +73,9 @@ export default function Pricing() {
                        Basic
                     </Button>
                     <div className="flex items-baseline">
-                      <span className="text-2xl md:text-4xl font-bold text-blue-500">GHS 49</span>
+                      {/* <span className="text-2xl md:text-4xl font-bold text-blue-500">GHS 49</span> */}
                       <span className="text-2xl md:text-4xl font-bold text-white">
-                        .99
+                        Basic Package
                       </span>
                     </div>
                     <p className="text-sm text-gray-500 mt-2">
@@ -126,8 +126,8 @@ export default function Pricing() {
                     </Button>
                     <div className="flex items-baseline">
                       <span className="text-wrap text-2xl md:text-4xl font-bold text-blue-500">
-                        GHS 99<span className="text-white">.99</span> 
-                        <span className="text-white"> <br /> (GHS 900/year)</span>
+                        Premium<span className="text-white"></span> 
+                        <span className="text-white"> <br /> Package</span>
                       </span>
                     </div>
                     <p className="text-sm text-gray-300 mt-2">
