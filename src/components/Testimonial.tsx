@@ -34,7 +34,7 @@ export default function MagicCardDemo() {
           Feedback From Our  <span className="lawn_color">Clients</span>
       </h1>
       <p className="text-xl mt-2 text-gray-300 text-center font-normal text-wrap">
-            Here&apos;s what are users have to say about Edutrack
+         Don&apos;t just take our word for it - hear from our satisfied users!
       </p>
 </div>
 
