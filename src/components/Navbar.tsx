@@ -172,7 +172,7 @@ export default function Navbar() {
             </NavigationMenu>
           </div>
 
-          <div className="hidden md:flex  items-center space-x-4">
+          <div className="hidden md:flex  items-center space-x-4 mr-10">
             <Button variant="ghost" className="text-white rounded-[4px]  hover:bg-white hover:text-black">Log in</Button>
             <Button className="border-[1px] border-white/15 rounded-[4px] hover:bg-white/5 text-white">Sign up</Button>
           </div>
