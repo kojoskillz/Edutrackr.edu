@@ -13,25 +13,25 @@ import Marquee from "@/components/ui/marquee";
 
 const files = [
   {
-    name: "bitcoin.pdf",
-    body: "Bitcoin is a cryptocurrency invented in 2008 by an unknown person or group of people using the name Satoshi Nakamoto.",
+    name: "Student management",
+    body: "Easily manage student data, track progress, and make data-driven decisions with our comprehensive student data management system.",
   },
   {
-    name: "finances.xlsx",
-    body: "A spreadsheet or worksheet is a file made of rows and columns that help sort data, arrange data easily, and calculate numerical data.",
+    name: "financial tracker",
+    body: "Easily track and manage student payments, fees, and invoices with our comprehensive student payment tracking system.",
   },
   {
-    name: "logo.svg",
-    body: "Scalable Vector Graphics is an Extensible Markup Language-based vector image format for two-dimensional graphics with support for interactivity and animation.",
+    name: "Staff management",
+    body: " Store and manage individual staff profiles, including contact information, job titles, and roles.",
   },
   {
-    name: "keys.gpg",
-    body: "GPG keys are used to encrypt and decrypt email, files, directories, and whole disk partitions and to authenticate messages.",
+    name: "Notice Board",
+    body: "Get latest update from the school via our notice portal.",
   },
   {
-    name: "seed.txt",
-    body: "A seed phrase, seed recovery phrase or backup seed phrase is a list of words which store all the information needed to recover Bitcoin funds on-chain.",
-  },
+    name: "Report Cards",
+    body: "Generate easy report cards Easily generate professional and comprehensive report cards with our report card generation system"
+  }
 ];
 
 const features = [
