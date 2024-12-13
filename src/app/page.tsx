@@ -6,7 +6,7 @@ import TextRevealDemo from '../components/TextReveal';
 import AccordionDemo from '../components/FAQ';
 import MagicCardDemo from '../components/Testimonial';
 import Pricing from '../components/Pricing';
-// import { BentoDemo } from '../components/Features';
+import BentoDemo from "../components/Features"
 // import WorldMapDemo from '../components/WorldMap';
 
 export default function landingPage() {
@@ -15,8 +15,8 @@ export default function landingPage() {
         <Navbar />
         <BackgroundBoxesDemo />
         <Schools />
-        {/* <BentoDemo /> */}
         <TextRevealDemo />
+        <BentoDemo />
         <MagicCardDemo />
         <Pricing />
         <AccordionDemo />
