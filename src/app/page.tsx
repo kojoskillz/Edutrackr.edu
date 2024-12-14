@@ -8,6 +8,7 @@ import MagicCardDemo from '../components/Testimonial';
 import Pricing from '../components/Pricing';
 import BentoDemo from "../components/Features"
 import { LampDemo } from '../components/Footer';
+import Steps from '../components/Steps';
 // import WorldMapDemo from '../components/WorldMap';
 
 export default function landingPage() {
@@ -18,10 +19,12 @@ export default function landingPage() {
         <Schools />
         <TextRevealDemo />
         <BentoDemo />
+        <Steps />
         <Pricing />
         <MagicCardDemo />
         <AccordionDemo />
         <LampDemo />
+    
         {/* <WorldMapDemo /> */}
          
     </>
