@@ -6,7 +6,7 @@ import { Check, ChevronRight } from "lucide-react";
 
 export default function Pricing() {
   return (
-    <section className="w-full py-12 ">
+    <section className="w-full py-12 mb-[-5rem] mt-20">
    
     <div>
          <h1 className="text-white text-center font-semibold text-wrap text-5xl">
@@ -121,12 +121,12 @@ export default function Pricing() {
                     <Button
                       variant={"outline"}
                       className="px-8 text-muted-foreground rounded-[5px] mb-4 hover:text-blue-400  border-white/15 border-[1px] text-white"
-                    >
-                      Premium
+                    > 
+                       Premium
                     </Button>
                     <div className="flex items-baseline">
                       <span className="text-wrap text-2xl md:text-4xl font-bold text-blue-500">
-                        Premium<span className="text-white"></span> 
+                         Premium<span className="text-white"></span> 
                         <span className="text-white"> <br /> Package</span>
                       </span>
                     </div>
