@@ -32,8 +32,8 @@ const BentoGrid = ({
                     </h1>
             </div> 
             <div className='mb-10'>
-                    <h1 className="text-white sticky font-bold text-2xl md:text-5xl text-center lawn_color ">
-                         Stay Ahead with Edutrack
+                    <h1 className="text-white sticky font-bold text-4xl md:text-6xl text-center ">
+                         Stay Ahead with <span className="lawn_color"> Edutrack</span>
                     </h1>
                     <h1 className="text-gray-300 sticky font-semibold text-normal text-center ">
                         Simplify school-wide communication with Edutrack&apos;s intuitive platform
