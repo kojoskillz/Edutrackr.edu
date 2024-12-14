@@ -23,7 +23,7 @@ export function LampDemo() {
                     Where effortless administration,  data-driven insights, enhanced student engagement, and seamless <br />  integration and security come together to transform the educational experience
                  </p>
                 <button className="text-black mt-10 w-44 text-xl font-normal rounded-[9px] p-2 bg-white hover:bg-white/85 ">
-                    Get Started
+                    Get Started &rarr;
                 </button>
         </div>
       </motion.h1>
