@@ -72,7 +72,7 @@ import {
       </Accordion>
 
 {/* marquee for edutrack */}
-    <div className='flex place-content-center mt-20 gap-20 logo m-a marquee'>
+    <div className='flex place-content-center mt-20 gap-20 logo m-a marquee1'>
 
         <div className='logo-container gap-10 flex animate' >
           
