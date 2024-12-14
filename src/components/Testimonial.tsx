@@ -30,7 +30,7 @@ export default function MagicCardDemo() {
             </div>
 {/* headline for testimonials */}
 <div className="mb-10 mt-5 ">
-      <h1 className="text-4xl text-white text-center font-bold text-wrap">
+      <h1 className="text-4xl md:text-6xl text-white text-center font-bold text-wrap">
           Feedback From Our  <span className="lawn_color">Clients</span>
       </h1>
       <p className="text-xl mt-2 text-gray-300 text-center font-normal text-wrap">
