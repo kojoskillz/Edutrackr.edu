@@ -5,6 +5,8 @@ import { LampContainer } from "../components/ui/lamp";
 
 export function LampDemo() {
   return (
+
+    <div>
     <LampContainer>
       <motion.h1
         initial={{ opacity: 0.5, y: 100 }}
@@ -25,8 +27,85 @@ export function LampDemo() {
                 <button className="text-black mt-10 w-44 text-xl font-normal rounded-[9px] p-2 bg-white hover:bg-white/85 ">
                     Get Started &rarr;
                 </button>
+                
         </div>
       </motion.h1>
+
+
     </LampContainer>
+
+    {/* footer */}
+        <div   className="bg-white/5">
+            <hr className="text-white bg-white/5 w-full"  />
+            <footer className="footer">
+  <div className="container">
+    <div className="row">
+      <div className="col-md-4 col-sm-6 col-xs-12">
+        <h5>EduTrack</h5>
+        <p className="text-gray-300">
+           Manage your data with ease.
+        </p>
+        <ul className="social-media">
+          <li>
+            <a href="#" target="_blank">
+              <i className="fa fa-facebook"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#" target="_blank">
+              <i className="fa fa-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#" target="_blank">
+              <i className="fa fa-instagram"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div className="flex mt-[-2rem] ">
+
+ 
+      <div className="col-md-4 col-sm-6 col-xs-12">
+        <h5>Quick Links</h5>
+        <ul className="quick-links">
+          <li className="text-gray-300">
+            <a href="#">Home</a>
+          </li>
+          <li className="text-gray-300">
+            <a href="#">About Us</a>
+          </li>
+          <li className="text-gray-300">
+            <a href="#">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+      <div className="col-md-4 col-sm-12 col-xs-12">
+        <h5>Contact Us</h5>
+        <ul className="contact-info">
+          <li>
+            <i className="fa fa-map-marker"></i>
+            <span className="text-gray-300">Accra,Ghana</span>
+          </li>
+          <li>
+            <i className="fa fa-phone"></i>
+            <div className="text-gray-300">+233 54-1833-813</div>
+            <div className="text-gray-300">+233 53-9642-830 </div>
+          </li>
+          <li>
+            <i className="fa fa-envelope"></i>
+            <span className="text-gray-300">skilluxetechnologies@gmail.com</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  </div>
+  <div className="copyright">
+    <p>&copy; 2024 Example Inc. All rights reserved.</p>
+  </div>
+</footer>
+        </div>
+</div>
   );
 }
