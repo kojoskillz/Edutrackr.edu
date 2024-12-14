@@ -3,6 +3,9 @@ import React from "react";
 import { motion } from "framer-motion";
 import { LampContainer } from "../components/ui/lamp";
 
+import Image from "next/image";
+import Edutracklogo from "../app/assets/Edutrack logo.png"
+
 export function LampDemo() {
   return (
 
@@ -36,13 +39,24 @@ export function LampDemo() {
 
     {/* footer */}
         <div   className="bg-white/5">
-            <hr className="text-white bg-white/5 w-full"  />
+            <hr className="text-white/5 bg-white/5 w-full"  />
             <footer className="footer">
   <div className="container">
     <div className="row">
       <div className="col-md-4 col-sm-6 col-xs-12">
-        <h5>EduTrack</h5>
-        <p className="text-gray-300">
+     <div>
+
+           <Image
+                        src={Edutracklogo}
+                            alt="star_image"
+                            width="100"
+                            height="100"
+                            sizes="fit-content"
+                            className=" rounded-full mb-2 md:h-[2rem] h-[4rem] md:w-[2rem] w-[4rem] fit-content"    
+                        /> 
+              <h5>EduTrack</h5>
+        </div>  
+        <p className="text-gray-300 text-sm">
            Manage your data with ease.
         </p>
         <ul className="social-media">
@@ -70,13 +84,13 @@ export function LampDemo() {
         <h5>Quick Links</h5>
         <ul className="quick-links">
           <li className="text-gray-300">
-            <a href="#">Home</a>
+            <a href="#" className="text-gray-300 text-sm">Home</a>
           </li>
           <li className="text-gray-300">
-            <a href="#">About Us</a>
+            <a href="#" className="text-gray-300 text-sm">About Us</a>
           </li>
           <li className="text-gray-300">
-            <a href="#">Contact Us</a>
+            <a href="#" className="text-gray-300 text-sm">Contact Us</a>
           </li>
         </ul>
       </div>
@@ -85,16 +99,16 @@ export function LampDemo() {
         <ul className="contact-info">
           <li>
             <i className="fa fa-map-marker"></i>
-            <span className="text-gray-300">Accra,Ghana</span>
+            <span className="text-gray-300 text-gray-300 text-sm">Accra,Ghana</span>
           </li>
           <li>
-            <i className="fa fa-phone"></i>
-            <div className="text-gray-300">+233 54-1833-813</div>
-            <div className="text-gray-300">+233 53-9642-830 </div>
+            <i className="fa fa-phone "></i>
+            <div className="text-gray-300 text-gray-300 text-sm">+233 54-1833-813</div>
+            <div className="text-gray-300 text-gray-300 text-sm">+233 53-9642-830 </div>
           </li>
           <li>
             <i className="fa fa-envelope"></i>
-            <span className="text-gray-300">skilluxetechnologies@gmail.com</span>
+            <span className="text-gray-300 text-sm">skilluxetechnologies@gmail.com</span>
           </li>
         </ul>
       </div>
@@ -102,7 +116,7 @@ export function LampDemo() {
   </div>
   </div>
   <div className="copyright">
-    <p>&copy; 2024 Example Inc. All rights reserved.</p>
+    <p className="text-gray-300 text-xs">&copy; Skilluxe Technologies. All rights reserved.</p>
   </div>
 </footer>
         </div>
