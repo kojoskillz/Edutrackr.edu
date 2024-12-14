@@ -17,8 +17,8 @@ export default function landingPage() {
         <Schools />
         <TextRevealDemo />
         <BentoDemo />
-        <MagicCardDemo />
         <Pricing />
+        <MagicCardDemo />
         <AccordionDemo />
         {/* <WorldMapDemo /> */}
          
