@@ -39,12 +39,12 @@ export function LampDemo() {
 
     {/* footer */}
         <div   className="bg-white/5">
-            <hr className="text-white/5 bg-white/5 w-full"  />
+            <hr className="relative w-10 place-content-center m-auto "  />
             <footer className="footer">
   <div className="container">
     <div className="row">
       <div className="col-md-4 col-sm-6 col-xs-12">
-     <div>
+     <div className="flex gap-2">
 
            <Image
                         src={Edutracklogo}
@@ -52,7 +52,7 @@ export function LampDemo() {
                             width="100"
                             height="100"
                             sizes="fit-content"
-                            className=" rounded-full mb-2 md:h-[2rem] h-[4rem] md:w-[2rem] w-[4rem] fit-content"    
+                            className=" rounded-full mb- md:h-[2rem] h-[4rem] md:w-[2rem] w-[4rem] fit-content"    
                         /> 
               <h5>EduTrack</h5>
         </div>  
