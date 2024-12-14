@@ -57,7 +57,7 @@ export function LampDemo() {
               <h5>EduTrack</h5>
         </div>  
         <p className="text-gray-300 text-sm">
-           Manage your data with ease.
+           Manage your school data with ease.
         </p>
         <ul className="social-media">
           <li>
