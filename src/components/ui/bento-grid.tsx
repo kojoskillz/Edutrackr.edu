@@ -1,417 +1,114 @@
-'use client'
-import { useTheme } from "next-themes";
-import Image from "next/image";
-import { MagicCard } from "../components/ui/magic-card";
-import star from "../app/assets/starX.png"
-import client from "../app/assets/client.png";
+import { ReactNode } from "react";
+import { ArrowRightIcon } from "@radix-ui/react-icons";
 
-export default function MagicCardDemo() {
-  const { theme } = useTheme();
+import { cn } from "@/lib/utils";
+import { Button } from "@/components/ui/button";
+
+// import Image from "next/image";
+// import client from "../app/assets/client.png";
+
+
+const BentoGrid = ({
+  children,
+  className,
+}: {
+  children: ReactNode;
+  className?: string;
+}) => {
   return (
-    <div
-      className={
-        " mt-[10rem] mb-[10rem] grid place-content-center "
-      }
-    >
 
-
-<div className="flex relative m-auto border-blue-500 border-[2px] rounded-full w-[8.5rem] place-content-center m-auto ">
-                    <Image
+    <div className="mt-[7rem] ">
+        <div className="flex mb-10 relative m-auto border-blue-500 border-[2px] rounded-full w-[8.5rem] place-content-center m-auto ">
+                    {/* <Image
                     src={client}
                         alt="star_image"
                         width="100"
                         height="100"
                         sizes="fit-content"
                         className="h-5 w-5 m-1 fit-content"    
-                    />
-                   <h1 className="text-white sticky font-semibold text-center lawn_color ">
-                       Our Clients
+                    /> */}
+                    <h1 className="text-white sticky font-semibold text-center lawn_color ">
+                       Features
+                    </h1>
+            </div> 
+            <div className='mb-10'>
+                    <h1 className="text-white sticky font-bold text-4xl md:text-6xl text-center ">
+                         Stay Ahead with <span className="lawn_color"> Edutrack</span>
+                    </h1>
+                    <h1 className="text-gray-300 sticky font-semibold text-normal text-center ">
+                        Simplify school-wide communication with Edutrack&apos;s intuitive platform
                     </h1>
             </div>
-{/* headline for testimonials */}
-<div className="mb-10 mt-5 ">
-      <h1 className="text-4xl md:text-6xl text-white text-center font-bold text-wrap">
-          Feedback From Our  <span className="lawn_color">Clients</span>
-      </h1>
-      <p className="text-xl mt-2 text-gray-300 text-center font-normal text-wrap">
-         Don&apos;t just take our word for it - hear from our satisfied users!
-      </p>
-</div>
-
-
-<div className="m-auto grid md:grid-cols-3 md:gap-8 gap-4 m-auto ">
-
-      <MagicCard
-        className="w-[20rem] h-[18rem]  glass cursor-pointer border-white/10 grid items-center justify-center shadow-2xl whitespace-wrap "
-        gradientColor={theme === "dark" ? "#30394AFF" : "#182A4BFF"}
-      >
-        <div className="grid p-5">
-            <h1 className="text-gray-300  pb-1 text-[15px] font-semibold text-gray-300">
-              Mrs. Ama Owusu
-            </h1>
-            <p className="pb-2  text-[12px] text-gray-300 ">
-                @Headmistress, St. Mary&apos;s Senior High School
-            </p>
-            <h3 className=" text-sm text-gray-300">
-               The best student management software so far. I love the easy use and the constant update to the software. Our burden of doing things manually is over.Will recommend them anytime anywhere.Try Edutrack
-            </h3>
-
-
-                  {/* star image */}
-          <div className="flex mt-2">
-              <Image
-                  src={star}
-                      alt="star_image"
-                      width="100"
-                      height="100"
-                      sizes="fit-content"
-                      className="h-4 w-4 mt-1 fit-content"    
-                />
-              <Image
-                  src={star}
-                      alt="star_image"
-                      width="100"
-                      height="100"
-                      sizes="fit-content"
-                      className="h-4 w-4 mt-1 fit-content"    
-                />
-              <Image
-                  src={star}
-                      alt="star_image"
-                      width="100"
-                      height="100"
-                      sizes="fit-content"
-                      className="h-4 w-4 mt-1 fit-content"    
-                />
-              <Image
-                  src={star}
-                      alt="star_image"
-                      width="100"
-                      height="100"
-                      sizes="fit-content"
-                      className="h-4 w-4 mt-1 fit-content"    
-                />
-              <Image
-                  src={star}
-                      alt="star_image"
-                      width="100"
-                      height="100"
-                      sizes="fit-content"
-                      className="h-4 w-4 mt-1 fit-content"    
-                />
-
-           </div>
+                            
+    
+        <div
+        className={cn(
+            "grid w-full auto-rows-[29rem] grid-cols-3 gap-4",
+            className,
+        )}
+        >
+        {children}
         </div>
-
-      </MagicCard>
-
-      <MagicCard
-        className="w-[20rem] h-[18rem]  glass cursor-pointer border-white/10 grid items-center justify-center shadow-2xl whitespace-wrap "
-        gradientColor={theme === "dark" ? "#30394AFF" : "#182A4BFF"}
-      >
-        <div className="grid p-5">
-            <h1 className="text-gray-300  pb-1 text-[15px] font-semibold text-gray-300">
-            Mr. Eric Nkrumah
-            </h1>
-            <p className="pb-2  text-[12px] text-gray-300 ">
-                @IT Coordinator, Presbyterian Boys&apos; Senior High School
-            </p>
-            <h3 className=" text-sm text-gray-300">
-            The mobile app for [Your School Management System] has been a hit with our students and parents. It&apos;s convenient, easy to use, and provides real-time updates on school news and events.
-            </h3>
-
-
-                  {/* star image */}
-          <div className="flex mt-2">
-              <Image
-                  src={star}
-                      alt="star_image"
-                      width="100"
-                      height="100"
-                      sizes="fit-content"
-                      className="h-4 w-4 mt-1 fit-content"    
-                />
-              <Image
-                  src={star}
-                      alt="star_image"
-                      width="100"
-                      height="100"
-                      sizes="fit-content"
-                      className="h-4 w-4 mt-1 fit-content"    
-                />
-              <Image
-                  src={star}
-                      alt="star_image"
-                      width="100"
-                      height="100"
-                      sizes="fit-content"
-                      className="h-4 w-4 mt-1 fit-content"    
-                />
-              <Image
-                  src={star}
-                      alt="star_image"
-                      width="100"
-                      height="100"
-                      sizes="fit-content"
-                      className="h-4 w-4 mt-1 fit-content"    
-                />
-       
-
-           </div>
-        </div>
-
-      </MagicCard>
-
-      <MagicCard
-        className="w-[20rem] h-[18rem]  glass cursor-pointer border-white/10 grid items-center justify-center shadow-2xl whitespace-wrap "
-        gradientColor={theme === "dark" ? "#30394AFF" : "#182A4BFF"}
-      >
-        <div className="grid p-5">
-            <h1 className="text-gray-300  pb-1 text-[15px] font-semibold text-gray-300">
-                   Dr. (Mrs.) Afua Adusei
-            </h1>
-            <p className="pb-2  text-[12px] text-gray-300 ">
-                @Principal, Wesley Girls&apos; High School
-            </p>
-            <h3 className=" text-sm text-gray-300">
-                We&apos;ve seen a significant improvement in student grades and overall academic performance since implementing [Your School Management System]. The system&apos; analytics and insights have helped us identify areas where students need extra support.
-            </h3>
-
-
-                  {/* star image */}
-          <div className="flex mt-2">
-              <Image
-                  src={star}
-                      alt="star_image"
-                      width="100"
-                      height="100"
-                      sizes="fit-content"
-                      className="h-4 w-4 mt-1 fit-content"    
-                />
-              <Image
-                  src={star}
-                      alt="star_image"
-                      width="100"
-                      height="100"
-                      sizes="fit-content"
-                      className="h-4 w-4 mt-1 fit-content"    
-                />
-              <Image
-                  src={star}
-                      alt="star_image"
-                      width="100"
-                      height="100"
-                      sizes="fit-content"
-                      className="h-4 w-4 mt-1 fit-content"    
-                />
-              <Image
-                  src={star}
-                      alt="star_image"
-                      width="100"
-                      height="100"
-                      sizes="fit-content"
-                      className="h-4 w-4 mt-1 fit-content"    
-                />
-              <Image
-                  src={star}
-                      alt="star_image"
-                      width="100"
-                      height="100"
-                      sizes="fit-content"
-                      className="h-4 w-4 mt-1 fit-content"    
-                />
-
-           </div>
-        </div>
-
-      </MagicCard>
-
-      <MagicCard
-        className="w-[20rem] h-[18rem]  glass cursor-pointer border-white/10 grid items-center justify-center shadow-2xl whitespace-wrap "
-        gradientColor={theme === "dark" ? "#30394AFF" : "#182A4BFF"}
-      >
-        <div className="grid p-5">
-            <h1 className="text-gray-300  pb-1 text-[15px] font-semibold text-gray-300">
-               Mr. Kofi Annan
-            </h1>
-            <p className="pb-2  text-[12px] text-gray-300 ">
-                @Class Teacher, St. Augustine&apos;s College
-            </p>
-            <h3 className=" text-sm text-gray-300">
-                 The attendance tracking and reporting features in [Your School Management System] have saved us a significant amount of time and reduced errors. The system is very intuitive and easy to use.
-            </h3>
-
-
-                  {/* star image */}
-          <div className="flex mt-2">
-              <Image
-                  src={star}
-                      alt="star_image"
-                      width="100"
-                      height="100"
-                      sizes="fit-content"
-                      className="h-4 w-4 mt-1 fit-content"    
-                />
-              <Image
-                  src={star}
-                      alt="star_image"
-                      width="100"
-                      height="100"
-                      sizes="fit-content"
-                      className="h-4 w-4 mt-1 fit-content"    
-                />
-              <Image
-                  src={star}
-                      alt="star_image"
-                      width="100"
-                      height="100"
-                      sizes="fit-content"
-                      className="h-4 w-4 mt-1 fit-content"    
-                />
-              <Image
-                  src={star}
-                      alt="star_image"
-                      width="100"
-                      height="100"
-                      sizes="fit-content"
-                      className="h-4 w-4 mt-1 fit-content"    
-                />
-              <Image
-                  src={star}
-                      alt="star_image"
-                      width="100"
-                      height="100"
-                      sizes="fit-content"
-                      className="h-4 w-4 mt-1 fit-content"    
-                />
-
-           </div>
-        </div>
-
-      </MagicCard>
-
-      <MagicCard
-        className="w-[20rem] h-[18rem]  glass cursor-pointer border-white/10 grid items-center justify-center shadow-2xl whitespace-wrap "
-        gradientColor={theme === "dark" ? "#30394AFF" : "#182A4BFF"}
-      >
-        <div className="grid p-5">
-            <h1 className="text-gray-300  pb-1 text-[15px] font-semibold text-gray-300">
-            Ms. Akua Mensah
-            </h1>
-            <p className="pb-2  text-[12px] text-gray-300 ">
-                @School Administrator, Ghana International School
-            </p>
-            <h3 className=" text-sm text-gray-300">
-                We were impressed by the customization options and scalability of [Your School Management System]. The support team was also very responsive and helpful during the implementation process.
-            </h3>
-
-
-                  {/* star image */}
-          <div className="flex mt-2">
-              <Image
-                  src={star}
-                      alt="star_image"
-                      width="100"
-                      height="100"
-                      sizes="fit-content"
-                      className="h-4 w-4 mt-1 fit-content"    
-                />
-              <Image
-                  src={star}
-                      alt="star_image"
-                      width="100"
-                      height="100"
-                      sizes="fit-content"
-                      className="h-4 w-4 mt-1 fit-content"    
-                />
-              <Image
-                  src={star}
-                      alt="star_image"
-                      width="100"
-                      height="100"
-                      sizes="fit-content"
-                      className="h-4 w-4 mt-1 fit-content"    
-                />
-              <Image
-                  src={star}
-                      alt="star_image"
-                      width="100"
-                      height="100"
-                      sizes="fit-content"
-                      className="h-4 w-4 mt-1 fit-content"    
-                />
-              <Image
-                  src={star}
-                      alt="star_image"
-                      width="100"
-                      height="100"
-                      sizes="fit-content"
-                      className="h-4 w-4 mt-1 fit-content"    
-                />
-
-           </div>
-        </div>
-
-      </MagicCard>
-
-      <MagicCard
-        className="w-[20rem] h-[18rem]  glass cursor-pointer border-white/10 grid items-center justify-center shadow-2xl whitespace-wrap "
-        gradientColor={theme === "dark" ? "#30394AFF" : "#182A4BFF"}
-      >
-        <div className="grid p-5">
-            <h1 className="text-gray-300  pb-1 text-[15px] font-semibold text-gray-300">
-            Mr. Kwame Boateng
-            </h1>
-            <p className="pb-2  text-[12px] text-gray-300 ">
-                @ICT Director, Accra Academy
-            </p>
-            <h3 className=" text-sm text-gray-300">
-               The parent portal feature in [Your School Management System] has greatly improved communication between teachers, parents, and students. We&apos;ve seen a notable increase in parental engagement and student performance.
-            </h3>
-
-
-                  {/* star image */}
-          <div className="flex mt-2">
-              <Image
-                  src={star}
-                      alt="star_image"
-                      width="100"
-                      height="100"
-                      sizes="fit-content"
-                      className="h-4 w-4 mt-1 fit-content"    
-                />
-              <Image
-                  src={star}
-                      alt="star_image"
-                      width="100"
-                      height="100"
-                      sizes="fit-content"
-                      className="h-4 w-4 mt-1 fit-content"    
-                />
-              <Image
-                  src={star}
-                      alt="star_image"
-                      width="100"
-                      height="100"
-                      sizes="fit-content"
-                      className="h-4 w-4 mt-1 fit-content"    
-                />
-              <Image
-                  src={star}
-                      alt="star_image"
-                      width="100"
-                      height="100"
-                      sizes="fit-content"
-                      className="h-4 w-4 mt-1 fit-content"    
-                />
-
-           </div>
-        </div>
-
-      </MagicCard>
-     
     </div>
-        
-</div>
   );
-}
+};
+
+const BentoCard = ({
+  name,
+  className,
+  background,
+  Icon,
+  description,
+  href,
+  cta,
+}: {
+  name: string;
+  className: string;
+  background: ReactNode;
+  Icon: any;
+  description: string;
+  href: string;
+  cta: string;
+}) => (
+    
+
+    
+
+  <div
+    key={name}
+    className={cn(
+      "group relative text-white  glass1  border-[1px] border-white/5 col-span-3 flex flex-col justify-between overflow-hidden rounded-xl",
+      // light styles
+      "bg-[#010116FF][box-shadow:0_0_0_1px_rgba(0,0,0,.03),0_2px_4px_rgba(0,0,0,.05),0_12px_24px_rgba(0,0,0,.05)]",
+      // dark styles
+      "transform-gpu  dark:bg-black dark:[border:1px_solid_rgba(255,255,255,.1)] dark:[box-shadow:0_-20px_80px_-20px_#FFFFFFCD_inset]",
+      className,
+    )}
+  >
+    
+    <div>{background}</div>
+    <div className="pointer-events-none  z-10 flex transform-gpu flex-col gap-1 p-6 transition-all duration-300 group-hover:-translate-y-10">
+      <Icon className="h-6 w-6  text-white origin-left transform-gpu text-neutral-700 transition-all duration-300 ease-in-out group-hover:scale-75" />
+      <h3 className="text-xl font-semibold text-neutral-700 dark:text-neutral-300">
+        {name}
+      </h3>
+      <p className="max-w-lg text-white ">{description}</p>
+    </div>
+
+    <div
+      className={cn(
+        "pointer-events-none absolute bottom-0 flex w-full translate-y-10 transform-gpu flex-row items-center p-4 opacity-0 transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100",
+      )}
+    >
+      <Button variant="ghost" asChild size="sm" className="pointer-events-auto">
+        <a href={href}>
+          {cta}
+          <ArrowRightIcon className="ml-2 h-4 w-4" />
+        </a>
+      </Button>
+    </div>
+    <div className="pointer-events-none  absolute inset-0 transform-gpu transition-all duration-300 group-hover:bg-black/[.03] group-hover:dark:bg-neutral-800/10" />
+  </div>
+);
+
+export { BentoCard, BentoGrid };
