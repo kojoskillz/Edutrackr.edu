@@ -9,7 +9,7 @@ export default function Pricing() {
     <section className="w-full py-12 mb-[-5rem] mt-20">
    
     <div>
-         <h1 className="text-white text-center font-semibold text-wrap text-5xl">
+         <h1 className="text-white text-center text-wrap font-bold text-4xl md:text-6xl">
             Get a plan that&apos;s right for you
          </h1>
          <p className="text-gray-300 text-center mt-1 mb-10 text-wrap font-normal text-xl">
@@ -44,12 +44,9 @@ export default function Pricing() {
                 </p>
                 <div className="inline-flex items-center hover:text-blue-400 gap-3 text-white">
                   <Button variant="outline" className="rounded-[5px] border-white/15 border-[1px]">
-                    Contact Us
+                      Contact Us
                     <ChevronRight className="w-4 h-4 ml-2" />
                   </Button>
-                  {/* <span className="text-gray-300">
-                    For enterprise-level purchases
-                  </span> */}
                 </div>
               </div>
             </div>
