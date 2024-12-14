@@ -52,7 +52,7 @@ export function LampDemo() {
                             width="100"
                             height="100"
                             sizes="fit-content"
-                            className=" rounded-full mb- md:h-[2rem] h-[4rem] md:w-[2rem] w-[4rem] fit-content"    
+                            className=" rounded-full mb- md:h-[2rem] h-[2rem] md:w-[2rem] w-[2rem] fit-content"    
                         /> 
               <h5>EduTrack</h5>
         </div>  
