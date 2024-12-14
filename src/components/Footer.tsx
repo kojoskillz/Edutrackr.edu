@@ -81,21 +81,21 @@ export function LampDemo() {
 
  
       <div className="col-md-4 col-sm-6 col-xs-12">
-        <h5>Quick Links</h5>
+        <h5 className="text-sm md:text-sm text-nowrap">Quick Links</h5>
         <ul className="quick-links">
-          <li className="text-gray-300">
+          <li>
             <a href="#" className="text-gray-300 text-sm">Home</a>
           </li>
-          <li className="text-gray-300">
+          <li>
             <a href="#" className="text-gray-300 text-sm">About Us</a>
           </li>
-          <li className="text-gray-300">
+          <li>
             <a href="#" className="text-gray-300 text-sm">Contact Us</a>
           </li>
         </ul>
       </div>
       <div className="col-md-4 col-sm-12 col-xs-12">
-        <h5>Contact Us</h5>
+        <h5 className="text-sm md:text-sm text-nowrap">Contact Us</h5>
         <ul className="contact-info">
           <li>
             <i className="fa fa-map-marker"></i>
