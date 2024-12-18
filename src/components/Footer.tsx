@@ -104,7 +104,7 @@ export function LampDemo() {
           <li>
             <i className="fa fa-phone "></i>
             <div className="text-gray-300 text-gray-300 text-sm">+233 54-1833-813</div>
-            <div className="text-gray-300 text-gray-300 text-sm">+233 53-9642-830 </div>
+            <div className="text-gray-300 text-gray-300 text-sm">+233 59-4750-442</div>
           </li>
           <li>
             <i className="fa fa-envelope"></i>
