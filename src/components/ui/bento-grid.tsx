@@ -17,7 +17,7 @@ const BentoGrid = ({
 }) => {
   return (
 
-    <div className="mt-[7rem] ">
+       <div className="mt-[5rem] lg:mt-[8rem] md:max-w-[75rem] max-w-[30rem] m-[50px] md:m-auto lg:md:m-auto  ">
         <div className="flex mb-10 relative m-auto border-blue-500 border-[2px] rounded-full w-[8.5rem] place-content-center m-auto ">
                     {/* <Image
                     src={client}
