@@ -22,7 +22,7 @@ export default function TextRevealDemo() {
             <div className="z-10 text-center flex min-h-64 items-center justify-center rounded-lg  bg-[#000409] dark:bg-[#000409]">
                     <TextReveal text="EduTrack is a cutting-edge student management system designed to streamline educational institutions' administrative tasks. Our innovative platform provides a comprehensive solution for managing student data, tracking academic progress, and facilitating communication between educators, students, and parents." />
             </div>
-            <h1 className="sticky lg:mt-[-6rem] md:mt-[-6rem] mt-[-11rem] m-20 md:text-5xl text-2xl font-bold place-content-center m-auto text-center lawn_color ">
+            <h1 className="sticky max-w-[300px] md:max-w-[550px] lg:mt-[-8rem] md:mt-[-8rem] mt-[-11rem] m-20 md:text-5xl text-2xl font-bold place-content-center m-auto text-center lawn_color ">
                        We are here to simplify your work    
             </h1>
 
