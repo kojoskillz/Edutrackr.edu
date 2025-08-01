@@ -6,156 +6,143 @@ import { Check, ChevronRight } from "lucide-react";
 
 export default function Pricing() {
   return (
-    <section className="w-full py-12 mb-[-5rem] mt-20">
-   
-    <div>
-         <h1 className="text-white text-center text-wrap font-bold text-4xl md:text-6xl">
-            Get a plan that&apos;s right for you
-         </h1>
-         <p className="text-gray-300 text-center mt-1 mb-10 text-wrap font-normal text-xl">
-          Start your EduTrack journey today and discover more benefits in our upgraded plans
-         </p>
-    </div>
+    <section className="w-full py-12 md:py-20 bg-black">
+      <div className="container px-4 md:px-6 mx-auto">
+        {/* Header Section */}
+        <div className="max-w-3xl mx-auto text-center mb-16">
+          <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
+            Get a Plan That's Right For You
+          </h1>
+          <p className="text-xl text-gray-300">
+            Start your Edutrackr journey today and unlock premium benefits with our upgraded plans
+          </p>
+        </div>
 
-      <div className="container px-4 md:px-6">
-        <div className="grid grid-cols-2 gap-8">
-          <div className="flex flex-col gap-4 mb-8">
-            <div className="inline-flex">
-              <Button variant="outline" className="rounded-full text-sm text-white">
-                <span className="mr-2">✏️</span> How it works?
-              </Button>
-            </div>
-            <h2 className="text-3xl text-white font-bold tracking-tight sm:text-4xl md:text-5xl">
-                 Pocket-friendly <span className="lawn_color">  pricing plan</span>
+        {/* Value Proposition Section */}
+        <div className="grid md:grid-cols-2 gap-8 mb-16">
+          <div>
+            <Button variant="outline" className="rounded-full text-sm text-white mb-6 bg-black border-gray-700 hover:bg-gray-800">
+              <span className="mr-2">✏️</span> How It Works
+            </Button>
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+              Competitive <span className="text-blue-400">Pricing Plans</span>
             </h2>
             <p className="text-gray-300 md:text-lg">
-               At Edutrack, we prioritize affordability.
+              At Edutrackr, we combine affordability with premium features designed for educational excellence.
             </p>
           </div>
-          <div className="mb-8">
-            <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
-              <div className="flex flex-col  gap-4">
-                <div className="text-blue-500">
-                  <span className="text-sm ">✓ Top-tier design quality </span>
-                </div>
-                <p className="text-white">
-                  One time payment grants you a lifetime access and continuous
-                  updates with unlimited projects
-                </p>
-                <div className="inline-flex items-center hover:text-blue-400 gap-3 text-white">
-                  <Button variant="outline" className="rounded-[5px] border-white/15 border-[1px]">
-                      Contact Us
-                    <ChevronRight className="w-4 h-4 ml-2" />
-                  </Button>
-                </div>
+          <div className="flex flex-col justify-between">
+            <div className="mb-6">
+              <div className="flex items-center text-blue-400 mb-2">
+                <Check className="w-5 h-5 mr-2" />
+                <span>Top-tier design quality</span>
               </div>
+              <p className="text-gray-300">
+                One-time payment grants lifetime access with continuous updates and unlimited projects.
+              </p>
             </div>
+            <Button variant="outline" className="w-fit text-white rounded-md border-gray-700 hover:border-blue-400 hover:text-white bg-black hover:bg-gray-900">
+              Contact Our Team
+              <ChevronRight className="w-4 h-4 ml-2" />
+            </Button>
           </div>
         </div>
-        <div className="grid gap-6 lg:grid-cols-2 lg:gap-12">
-          <Card className="relative border-white/5 glass rounded-[10px]">
-            <div className="absolute -top-3 left-4">
-              <span className="px-3 py-1 text-xs font-semibold text-white bg-blue-500 rounded-full">
+
+        {/* Pricing Cards */}
+        <div className="grid gap-8 lg:grid-cols-2 lg:gap-12">
+          {/* Basic Plan */}
+          <Card className="relative border-gray-800 bg-gradient-to-b from-gray-900 to-gray-950 rounded-xl shadow-lg overflow-hidden hover:shadow-blue-500/20 transition-shadow">
+            <div className="absolute mt-[-10px]  top-4 left-4">
+              <span className="px-3 py-1 text-xs font-semibold text-white bg-blue-500 rounded-full shadow-md">
                 MOST POPULAR
               </span>
             </div>
-            <CardContent className="p-6">
-              <div className="grid grid-cols-2 gap-4">
-                <div className="flex flex-col gap-6 mr-4 border-r">
+            <CardContent className="p-8">
+              <div className="grid md:grid-cols-2 gap-8">
+                <div className="flex flex-col gap-6">
                   <div>
-                    <Button
-                      variant={"outline"}
-                      className="px-8 text-muted-foreground rounded-[5px] mb-4 text-white hover:text-blue-400  border-white/15 border-[1px] "
-                    >
-                       Basic
-                    </Button>
-                    <div className="flex items-baseline">
-                      {/* <span className="text-2xl md:text-4xl font-bold text-blue-500">GHS 49</span> */}
-                      <span className="text-2xl md:text-4xl font-bold text-white">
-                        Basic Package
-                      </span>
-                    </div>
-                    <p className="text-sm text-gray-500 mt-2">
-                          Ideal for medium-sized basic schools
+                    <span className="inline-block px-4 py-1 text-sm font-medium text-blue-400 bg-blue-400/10 rounded-full mb-4">
+                      Basic
+                    </span>
+                    <h3 className="text-2xl md:text-3xl font-bold text-white mb-2">
+                      Basic Package
+                    </h3>
+                    <p className="text-gray-400">
+                      Perfect for medium-sized basic schools
                     </p>
                   </div>
-                  <Button className="bg-blue-500 rounded-[5px] hover:bg-blue-600 text-white w-fit">
-                      Buy now
+                  <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white shadow-lg shadow-blue-500/20">
+                    Get Started
                     <ChevronRight className="ml-2 w-4 h-4" />
                   </Button>
                 </div>
-                <ul className="grid gap-4 text-white">
-                  <li className="flex items-center gap-2">
-                    <Check className="w-5 h-5 text-blue-500" />
+                <ul className="space-y-4 text-gray-300">
+                  <li className="flex items-start gap-3">
+                    <Check className="w-5 h-5 text-blue-400 mt-0.5 flex-shrink-0" />
                     <span>User management for up to 200 students</span>
                   </li>
-                  <li className="flex items-center gap-2">
-                    <Check className="w-5 h-5 text-blue-500" />
-                    <span>Basic reporting and attendance tracking</span>
+                  <li className="flex items-start gap-3">
+                    <Check className="w-5 h-5 text-blue-400 mt-0.5 flex-shrink-0" />
+                    <span>Basic reporting </span>
                   </li>
-                  <li className="flex items-center gap-2">
-                    <Check className="w-5 h-5 text-blue-500" />
+                  <li className="flex items-start gap-3">
+                    <Check className="w-5 h-5 text-blue-400 mt-0.5 flex-shrink-0" />
                     <span>Priority customer support</span>
                   </li>
-                  <li className="flex items-center gap-2">
-                    <Check className="w-5 h-5 text-blue-500" />
-                    <span> Grade management</span>
+                  <li className="flex items-start gap-3">
+                    <Check className="w-5 h-5 text-blue-400 mt-0.5 flex-shrink-0" />
+                    <span>Comprehensive grade management</span>
                   </li>
-                  <li className="flex items-center gap-2">
-                    <Check className="w-5 h-5 text-blue-500" />
-                    <span> Customer support</span>
+                  <li className="flex items-start gap-3">
+                    <Check className="w-5 h-5 text-blue-400 mt-0.5 flex-shrink-0" />
+                    <span>24/7 customer support</span>
                   </li>
                 </ul>
               </div>
             </CardContent>
           </Card>
 
-          <Card className="border-[2px] border-blue-500 glass rounded-[10px] ">
-            <CardContent className="p-6">
-              <div className="grid grid-cols-2 gap-4">
-                <div className="flex flex-col gap-6 border-r mr-4">
+          {/* Premium Plan */}
+          <Card className="border-2 border-blue-500/30 bg-gradient-to-b from-gray-900 to-gray-950 rounded-xl shadow-lg overflow-hidden hover:shadow-blue-500/30 transition-shadow">
+            <CardContent className="p-8">
+              <div className="grid md:grid-cols-2 gap-8">
+                <div className="flex flex-col gap-6">
                   <div>
-                    <Button
-                      variant={"outline"}
-                      className="px-8 text-muted-foreground rounded-[5px] mb-4 hover:text-blue-400  border-white/15 border-[1px] text-white"
-                    > 
-                       Premium
-                    </Button>
-                    <div className="flex items-baseline">
-                      <span className="text-wrap text-2xl md:text-4xl font-bold text-blue-500">
-                         Premium<span className="text-white"></span> 
-                        <span className="text-white"> <br /> Package</span>
-                      </span>
-                    </div>
-                    <p className="text-sm text-gray-300 mt-2">
-                       Ideal for large-size basic schools
+                    <span className="inline-block px-4 py-1 text-sm font-medium text-blue-400 bg-blue-400/10 rounded-full mb-4">
+                      Premium
+                    </span>
+                    <h3 className="text-2xl md:text-3xl font-bold text-white mb-2">
+                      Premium Package
+                    </h3>
+                    <p className="text-gray-400">
+                      Designed for large basic schools
                     </p>
                   </div>
-                  <Button className="w-fit text-blue-500 hover:text-blue-300">
-                    Buy now
+                  <Button className="w-full bg-transparent border border-blue-500 text-blue-500 hover:bg-blue-500/10 hover:text-blue-400">
+                    Upgrade Now
                     <ChevronRight className="ml-2 w-4 h-4" />
                   </Button>
                 </div>
-                <ul className="grid gap-4 text-white">
-                  <li className="flex items-center gap-2">
-                    <Check className="w-5 h-5 text-blue-500" />
+                <ul className="space-y-4 text-gray-300">
+                  <li className="flex items-start gap-3">
+                    <Check className="w-5 h-5 text-blue-400 mt-0.5 flex-shrink-0" />
                     <span>Manage up to 500 student records</span>
                   </li>
-                  <li className="flex items-center gap-2">
-                  <Check className="w-5 h-5 text-blue-500" />
-                    <span>Advanced reporting, attendance tracking, and grade management</span>
+                  <li className="flex items-start gap-3">
+                    <Check className="w-5 h-5 text-blue-400 mt-0.5 flex-shrink-0" />
+                    <span>Advanced analytics and reporting</span>
                   </li>
-                  <li className="flex items-center gap-2">
-                  <Check className="w-5 h-5 text-blue-500" />
-                    <span>Additional features (e.g., online payment integration, custom reporting)</span>
+                  <li className="flex items-start gap-3">
+                    <Check className="w-5 h-5 text-blue-400 mt-0.5 flex-shrink-0" />
+                    <span>Online payment integration</span>
                   </li>
-                  <li className="flex items-center gap-2">
-                    <Check className="w-5 h-5 text-blue-500" />
-                    <span>Onboarding and training sessions for staff</span>
+                  <li className="flex items-start gap-3">
+                    <Check className="w-5 h-5 text-blue-400 mt-0.5 flex-shrink-0" />
+                    <span>Custom reporting tools</span>
                   </li>
-                  <li className="flex items-center gap-2">
-                    <Check className="w-5 h-5 text-blue-500" />
-                    <span>Dedicated customer support</span>
+                  <li className="flex items-start gap-3">
+                    <Check className="w-5 h-5 text-blue-400 mt-0.5 flex-shrink-0" />
+                    <span>Dedicated account manager</span>
                   </li>
                 </ul>
               </div>
@@ -163,6 +150,16 @@ export default function Pricing() {
           </Card>
         </div>
 
+        {/* Enterprise Option */}
+        <div className="mt-16 text-center">
+          <p className="text-gray-400 mb-6">
+            Need a custom solution for your institution?
+          </p>
+          <Button variant="outline" className="border-blue-500 text-blue-500 hover:bg-blue-500/10 hover:text-blue-400">
+            Request Enterprise Plan
+            <ChevronRight className="ml-2 w-4 h-4" />
+          </Button>
+        </div>
       </div>
     </section>
   );
