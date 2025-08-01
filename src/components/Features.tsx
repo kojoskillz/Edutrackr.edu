@@ -39,7 +39,7 @@ const features = [
     name: "Student Data",
     description: "Comprehensive student management system",
     href: "#",
-    // cta: "View details",
+    cta: "View details",
     className: "col-span-3 lg:col-span-1",
     background: (
       <Marquee
@@ -72,7 +72,7 @@ const features = [
     name: "Notifications",
     description: "Real-time alerts and updates",
     href: "#",
-    // cta: "View alerts",
+    cta: "View alerts",
     className: "col-span-3 lg:col-span-1",
     background: (
       <AnimatedListItem>
@@ -92,7 +92,7 @@ const features = [
     name: "Management",
     description: "All school administration tools",
     href: "#",
-    // cta: "Explore tools",
+    cta: "Explore tools",
     className: "col-span-3 lg:col-span-1",
     background: (
       <div className="absolute inset-0 grid grid-cols-3 grid-rows-2 gap-1 p-2">
@@ -118,7 +118,7 @@ const features = [
     description: "Academic schedule and events",
     className: "col-span-3 lg:col-span-1",
     href: "#",
-    // cta: "View calendar",
+    cta: "View calendar",
     background: (
       <Calendar
         mode="single"
@@ -133,7 +133,10 @@ export default function BentoDemo() {
   return (
     <BentoGrid className="grid-cols-2">
       {features.map((feature, idx) => (
-        <BentoCard key={idx} {...feature} />
+        <BentoCard
+          key={idx}
+          {...feature}
+        />
       ))}
     </BentoGrid>
   );
