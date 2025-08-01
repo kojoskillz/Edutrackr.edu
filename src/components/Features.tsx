@@ -1,51 +1,50 @@
 'use client'
 
-import { CalendarIcon, FileTextIcon } from "@radix-ui/react-icons";
-// import { BellIcon, Share2Icon } from "lucide-react";
-
+import { CalendarIcon, FileTextIcon, PersonIcon } from "@radix-ui/react-icons";
+import { BellIcon, Share2Icon, ClipboardList, CreditCard, Users, BookOpenCheck } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Calendar } from "@/components/ui/calendar";
-// import AnimatedBeamMultipleOutputDemo from "@/components/ui/animated-list";
-// import  AnimatedListItem from "@/components/ui/animated-list";
+import AnimatedBeamMultipleOutputDemo from "@/components/ui/animated-list";
+import AnimatedListItem from "@/components/ui/animated-list";
 import { BentoCard, BentoGrid } from "@/components/ui/bento-grid";
 import Marquee from "@/components/ui/marquee";
-
 
 const files = [
   {
     name: "Student management",
-    body: "Easily manage student data, track progress, and make data-driven decisions with our comprehensive student data management system.",
+    body: "Easily manage student data, track progress, and make data-driven decisions.",
   },
   {
-    name: "financial tracker",
-    body: "Easily track and manage student payments, fees, and invoices with our comprehensive student payment tracking system.",
+    name: "Financial tracker",
+    body: "Track and manage student payments, fees, and invoices.",
   },
   {
     name: "Staff management",
-    body: " Store and manage individual staff profiles, including contact information, job titles, and roles.",
-  },
-  {
-    name: "Notice Board",
-    body: "Get latest update from the school via our notice portal.",
-  },
-  {
-    name: "Report Cards",
-    body: "Generate easy report cards Easily generate professional and comprehensive report cards with our report card generation system"
+    body: "Store and manage individual staff profiles and roles.",
   }
+];
+
+const managementFeatures = [
+  { name: "Results", icon: <ClipboardList className="w-4 h-4" /> },
+  { name: "Payments", icon: <CreditCard className="w-4 h-4" /> },
+  { name: "Reports", icon: <FileTextIcon className="w-4 h-4" /> },
+  { name: "Teachers", icon: <Users className="w-4 h-4" /> },
+  { name: "Classes", icon: <BookOpenCheck className="w-4 h-4" /> },
+  { name: "Admin", icon: <PersonIcon className="w-4 h-4" /> }
 ];
 
 const features = [
   {
     Icon: FileTextIcon,
-    name: "Save your files",
-    description: "We automatically save your files as you type.",
+    name: "Student Data",
+    description: "Comprehensive student management system",
     href: "#",
-    cta: "Learn more",
+    // cta: "View details",
     className: "col-span-3 lg:col-span-1",
     background: (
       <Marquee
         pauseOnHover
-        className="absolute top-10 [--duration:20s] [mask-image:linear-gradient(to_top,transparent_40%,#000_100%)] "
+        className="absolute top-10 [--duration:20s] [mask-image:linear-gradient(to_top,transparent_40%,#000_100%)]"
       >
         {files.map((f, idx) => (
           <figure
@@ -57,53 +56,74 @@ const features = [
               "transform-gpu blur-[1px] transition-all duration-300 ease-out hover:blur-none",
             )}
           >
-            <div className="flex flex-row items-center gap-2">
-              <div className="flex flex-col">
-                <figcaption className="text-sm font-medium dark:text-white ">
-                  {f.name}
-                </figcaption>
-              </div>
+            <div className="flex flex-col">
+              <figcaption className="text-sm font-medium dark:text-white">
+                {f.name}
+              </figcaption>
+              <blockquote className="mt-2 text-xs">{f.body}</blockquote>
             </div>
-            <blockquote className="mt-2 text-xs">{f.body}</blockquote>
           </figure>
         ))}
       </Marquee>
     ),
   },
-//   {
-//     Icon: BellIcon,
-//     name: "Notifications",
-//     description: "Get notified when something happens.",
-//     href: "#",
-//     cta: "Learn more",
-//     className: "col-span-3 lg:col-span-2",
-//     background: (
-//       <AnimatedListItem  className="absolute right-2 top-4 h-[300px] w-full border-none transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_10%,#000_100%)] group-hover:scale-105" />
-//     ),
-//   },
-//   {
-//     Icon: Share2Icon,
-//     name: "Integrations",
-//     description: "Supports 100+ integrations and counting.",
-//     href: "#",
-//     cta: "Learn more",
-//     className: "col-span-3 lg:col-span-2",
-//     background: (
-//       <AnimatedBeamMultipleOutputDemo className="absolute right-2 top-4 h-[300px] border-none transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_10%,#000_100%)] group-hover:scale-105" />
-//     ),
-//   },
+  {
+    Icon: BellIcon,
+    name: "Notifications",
+    description: "Real-time alerts and updates",
+    href: "#",
+    // cta: "View alerts",
+    className: "col-span-3 lg:col-span-1",
+    background: (
+      <AnimatedListItem>
+        <div className="absolute inset-0 flex flex-col gap-2 p-4 overflow-y-auto">
+          {['New assignment', 'Fee due', 'Meeting reminder', 'Report ready'].map((item, idx) => (
+            <div key={idx} className="p-2 rounded-lg bg-white/5 border border-white/10">
+              <div className="text-sm">{item}</div>
+              <div className="text-xs text-gray-400">2{idx} minutes ago</div>
+            </div>
+          ))}
+        </div>
+      </AnimatedListItem>
+    ),
+  },
+  {
+    Icon: Share2Icon,
+    name: "Management",
+    description: "All school administration tools",
+    href: "#",
+    // cta: "Explore tools",
+    className: "col-span-3 lg:col-span-1",
+    background: (
+      <div className="absolute inset-0 grid grid-cols-3 grid-rows-2 gap-1 p-2">
+        {managementFeatures.map((feature, idx) => (
+          <div
+            key={idx}
+            className={cn(
+              "flex flex-col h-[12rem] m-2 items-center justify-center p-1 rounded",
+              "bg-white/5 border border-white/10 hover:bg-white/10",
+              "transition-colors duration-200 cursor-pointer"
+            )}
+          >
+            <div className="text-blue-300">{feature.icon}</div>
+            <span className="text-xs mt-1 text-center">{feature.name}</span>
+          </div>
+        ))}
+      </div>
+    ),
+  },
   {
     Icon: CalendarIcon,
     name: "Calendar",
-    description: "Keep track with our academic calendar.",
+    description: "Academic schedule and events",
     className: "col-span-3 lg:col-span-1",
     href: "#",
-    cta: "Learn more",
+    // cta: "View calendar",
     background: (
       <Calendar
         mode="single"
-        selected={new Date(2022, 4, 11, 0, 0, 0)}
-        className="absolute right-0 top-10 origin-top rounded-[9px] border-[1px] border-white/15 transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_40%,#000_100%)] group-hover:scale-105"
+        selected={new Date()}
+        className="absolute right-0 top-4 origin-top rounded-md border border-white/15 transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_40%,#000_100%)] group-hover:scale-105"
       />
     ),
   },
@@ -111,8 +131,7 @@ const features = [
 
 export default function BentoDemo() {
   return (
-    
-    <BentoGrid>
+    <BentoGrid className="grid-cols-2">
       {features.map((feature, idx) => (
         <BentoCard key={idx} {...feature} />
       ))}
