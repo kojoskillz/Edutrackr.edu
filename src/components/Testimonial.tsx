@@ -117,7 +117,7 @@ export default function MagicCardDemo() {
                 @IT Coordinator, Presbyterian Boys&apos; Senior High School
             </p>
             <h3 className=" text-sm text-gray-300">
-            The mobile app for [Your School Management System] has been a hit with our students and parents. It&apos;s convenient, easy to use, and provides real-time updates on school news and events.
+            The mobile version for edutrackr has been a hit with our students and parents. It&apos;s convenient, easy to use, and provides real-time updates on school news and events.
             </h3>
 
 
@@ -174,7 +174,7 @@ export default function MagicCardDemo() {
                 @Principal, Wesley Girls&apos; High School
             </p>
             <h3 className=" text-sm text-gray-300">
-                We&apos;ve seen a significant improvement in student grades and overall academic performance since implementing [Your School Management System]. The system&apos; analytics and insights have helped us identify areas where students need extra support.
+                We&apos;ve seen a significant improvement in student grades and overall academic performance since implementing edutrackr. The system&apos; analytics and insights have helped us identify areas where students need extra support.
             </h3>
 
 
@@ -238,7 +238,7 @@ export default function MagicCardDemo() {
                 @Class Teacher, St. Augustine&apos;s College
             </p>
             <h3 className=" text-sm text-gray-300">
-                 The attendance tracking and reporting features in [Your School Management System] have saved us a significant amount of time and reduced errors. The system is very intuitive and easy to use.
+                 The attendance tracking and reporting features in edutrackr have saved us a significant amount of time and reduced errors. The system is very intuitive and easy to use.
             </h3>
 
 
@@ -302,7 +302,7 @@ export default function MagicCardDemo() {
                 @School Administrator, Ghana International School
             </p>
             <h3 className=" text-sm text-gray-300">
-                We were impressed by the customization options and scalability of [Your School Management System]. The support team was also very responsive and helpful during the implementation process.
+                We were impressed by the customization options and scalability of edutrackr. The support team was also very responsive and helpful during the implementation process.
             </h3>
 
 
@@ -366,7 +366,7 @@ export default function MagicCardDemo() {
                 @ICT Director, Accra Academy
             </p>
             <h3 className=" text-sm text-gray-300">
-               The parent portal feature in [Your School Management System] has greatly improved communication between teachers, parents, and students. We&apos;ve seen a notable increase in parental engagement and student performance.
+               The parent portal feature in edutrackr has greatly improved communication between teachers, parents, and students. We&apos;ve seen a notable increase in parental engagement and student performance.
             </h3>
 
 
