@@ -37,8 +37,8 @@ export default function BackgroundBoxesDemo() {
             "md:text-5xl text-4xl font-bold text-white relative z-20 text-center md:text-left mt-6 leading-tight",
             "bg-clip-text text-transparent bg-gradient-to-r from-blue-100 to-blue-400"
           )}>
-            Transform <span className="text-blue-300">Education</span> With<br />
-            Our <span className="text-blue-300">Intelligent</span><br />
+            Transform <span className="bg-gradient-to-r from-blue-400 via-cyan-300 to-blue-500 bg-clip-text text-transparent">Education</span> With<br />
+            Our <span className="bg-gradient-to-r from-blue-400 via-cyan-300 to-blue-500 bg-clip-text text-transparent">Intelligent</span><br />
             School Management Platform
           </h1>
           
