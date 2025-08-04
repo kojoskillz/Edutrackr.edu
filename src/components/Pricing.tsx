@@ -38,7 +38,7 @@ export default function Pricing() {
                 <span>Top-tier design quality</span>
               </div>
               <p className="text-gray-300">
-                One-time payment grants lifetime access with continuous updates and unlimited projects.
+                We offer lifetime access with continuous updates and unlimited projects.You choose a feature we build.
               </p>
             </div>
             <Button variant="outline" className="w-fit text-white rounded-md border-gray-700 hover:border-blue-400 hover:text-white bg-black hover:bg-gray-900">
