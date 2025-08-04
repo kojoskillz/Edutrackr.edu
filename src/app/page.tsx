@@ -24,8 +24,6 @@ export default function landingPage() {
         <MagicCardDemo />
         <AccordionDemo />
         <LampDemo />
-    
-        {/* <WorldMapDemo /> */}
          
     </>
   );
